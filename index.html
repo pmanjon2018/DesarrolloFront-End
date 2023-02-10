@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- CHARSET -->
+	<meta charset="UTF-8">
+	<!-- IE-EDGE -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- VIEWPORT -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- DESCRIPTION -->
+	<meta name="description" content="Ejercicio curso Desarrollo Front End">
+	<!-- AUTHOR -->
+	<meta name="author" content="Paula Manjón">
+	<!-- TITTLE -->
+	<title>Formulario</title>
+	<!-- STYLES -->
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<!-- MAIN -->
+	<main>
+		<!-- FORMULARIO -->
+		<form action="" class="formulario" id="formulario">
+		    <!-- TITULO -->
+			<p class="form-titulo">Create account</p>
+
+			<!-- NOMBRE-->
+			<div class="formulario__grupo" id="grupo__nombre">
+				<label for="nombre" class="formulario__label">Nombre</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="nombre" id="nombre" required>
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Debe estar compuesto únicamente por letras.</p>
+				<p class="formulario__input-vacio">Campo obligatorio.</p>
+			</div>
+
+			<!-- EMAIL -->
+			<div class="formulario__grupo" id="grupo__correo">
+				<label for="correo" class="formulario__label">Correo Electrónico</label>
+				<div class="formulario__grupo-input">
+					<input type="email" class="formulario__input" name="correo" id="correo" required>
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Email inválido.</p>
+				<p class="formulario__input-vacio">Campo obligatorio.</p>
+			</div>
+
+			<!-- CLAVE -->
+			<div class="formulario__grupo" id="grupo__password">
+				<label for="password" class="formulario__label">Contraseña</label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="password" id="password" required>
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">No debe tener más de 8 caracteres.</p>
+				<p class="formulario__input-vacio">Campo obligatorio.</p>
+			</div>
+
+			<!-- REPETIR CLAVE -->
+			<div class="formulario__grupo" id="grupo__password2">
+				<label for="password2" class="formulario__label">Repetir Contraseña</label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="password2" id="password2" required>
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Las contraseñas no coinciden.</p>
+				<p class="formulario__input-vacio">Campo obligatorio.</p>
+			</div>
+			
+			<!-- ENVIAR -->
+			<div class="formulario__grupo formulario__grupo-btn-enviar">
+				<button type="submit" class="formulario__btn">Enviar</button>
+				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">El formulario se ha enviado correctamente</p>
+			</div>
+		</form>
+	</main>
+
+	<script src="index.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+</html>
